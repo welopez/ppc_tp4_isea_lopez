@@ -58,8 +58,31 @@
         android:id="@+id/textView"
         android:layout_width="266dp"
         android:layout_height="127dp"
-        android:textColor="@color/black"
         android:text="Agregar TextView, LargeText, MediumText, SmallText, MultiLineText, PlainText"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="160dp" />
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <EditText
+        android:id="@+id/editTextPlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="PlainText"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="MultilineText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlainText"
+        tools:layout_editor_absoluteX="100dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
