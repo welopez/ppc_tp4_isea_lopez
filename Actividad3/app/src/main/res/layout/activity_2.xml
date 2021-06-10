@@ -54,35 +54,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="266dp"
-        android:layout_height="127dp"
-        android:text="Agregar TextView, LargeText, MediumText, SmallText, MultiLineText, PlainText"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="155dp" />
-
-    <EditText
-        android:id="@+id/editTextPlainText"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="PlainText"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="100dp" />
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/act2page2">
 
-    <EditText
-        android:id="@+id/editTextTextMultiline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="MultilineText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPlainText"
-        tools:layout_editor_absoluteX="100dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:text="TextView"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/largeText"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="LargeText"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mediumText"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="MediumText"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/smallText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="SmallText"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextPlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="PlainText"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="80dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="MultilineText"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
